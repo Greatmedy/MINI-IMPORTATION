@@ -127,6 +127,15 @@ const Account = () => {
                 Valid until {new Date(user.membershipExpiresAt).toLocaleDateString()}
               </p>
             )}
+
+            {user.memberStatus === "verified" && (
+              <div className="mt-3 rounded-xl bg-blush p-3 text-sm">
+                <p className="text-charcoal/70">Use the link below to source from 1688.com</p>
+                <a  href="https://www.1688.com" target="_blank" rel="noopener noreferrer" className="btn-primary mt-2 w-full">
+                  Go to 1688.com
+                </a>
+              </div>
+            )}
             {user.memberStatus === "expired" && (
               <div className="mt-2">
                 <p className="text-sm text-accent-600">Membership expired — renew {formatNaira(5000)}</p>
