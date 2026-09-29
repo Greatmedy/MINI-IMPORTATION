@@ -86,7 +86,7 @@ const Footer = () => {
 
       <div className="border-t border-white/10 py-6">
         <p className="container-app text-center text-xs text-white/50">
-          &copy; {year} FOA Importation Ltd. All rights reserved.
+          &copy; {year} FOA Importation Ltd. All rights reserved. Developed by <a href="https://apextechs.vercel.app" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-400 hover:underline">APEX TECH</a>.
         </p>
       </div>
     </footer>
