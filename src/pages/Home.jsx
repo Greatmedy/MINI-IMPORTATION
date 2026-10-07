@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiShoppingBag, FiBookOpen, FiPackage, FiUsers } from "react-icons/fi";
+import { FiShoppingBag, FiBookOpen, FiPackage, FiUsers, FiStar, FiMail, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-import { FiMail, FiMapPin } from "react-icons/fi";
 import Hero from "../components/Hero.jsx";
 import Services from "../components/Services.jsx";
 import AcademyTeaser from "../components/AcademyTeaser.jsx";
