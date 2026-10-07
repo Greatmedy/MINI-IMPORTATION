@@ -59,14 +59,6 @@ const Services = () => (
       </p>
     </div>
 
-    <div className="mt-10 overflow-hidden rounded-3xl shadow-soft">
-      <img
-        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1800"
-        alt="Chinese factory team inspecting products before export"
-        className="h-72 w-full object-cover sm:h-96"
-      />
-    </div>
-
     <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {reasons.map((s, i) => (
         <motion.div

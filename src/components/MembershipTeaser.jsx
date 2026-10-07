@@ -20,7 +20,9 @@ const MembershipTeaser = () => (
         transition={{ duration: 0.5 }}
         className="order-2 lg:order-1"
       >
-        <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-brand-600">Membership</p>
+        <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-brand-600">
+          Membership
+        </p>
         <h2 className="font-display text-3xl font-semibold sm:text-4xl">
           Ongoing support for people building an importation business
         </h2>
@@ -33,7 +35,10 @@ const MembershipTeaser = () => (
           ))}
         </ul>
         <p className="mt-5 font-display text-2xl font-bold text-brand-700">
-          {formatNaira(5000)} <span className="text-base font-normal text-charcoal/60">per month</span>
+          {formatNaira(5000)}{" "}
+          <span className="text-base font-normal text-charcoal/60">
+            per month
+          </span>
         </p>
         <Link to="/membership" className="btn-primary mt-6 inline-flex">
           Become a member
@@ -48,7 +53,7 @@ const MembershipTeaser = () => (
         className="order-1 overflow-hidden rounded-3xl shadow-soft lg:order-2"
       >
         <img
-          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1400"
+          src="/nigeria-entrepreneur.jpg"
           alt="Nigerian entrepreneur planning an importation business"
           className="h-full w-full object-cover"
         />
