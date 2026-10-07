@@ -99,7 +99,7 @@ const Home = () => {
   }, []);
 
   const whatsappPrimary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "918983294206");
-  const whatsappSecondary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "2348103526784");
+  const whatsappSecondary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "2347017765446");
 
   return (
     <div>
@@ -153,7 +153,7 @@ const Home = () => {
           </div>
           <div className="card p-5">
             <p><a className="hover:text-brand-600" href="mailto:foaimportation.ltd@gmail.com">foaimportation.ltd@gmail.com</a></p>
-            <p className="mt-2"><a className="hover:text-brand-600" href={whatsappSecondary} target="_blank" rel="noopener noreferrer">WhatsApp +234 810 352 6784</a></p>
+            <p className="mt-2"><a className="hover:text-brand-600" href={whatsappSecondary} target="_blank" rel="noopener noreferrer">WhatsApp +234 701 776 5446</a></p>
             <p className="mt-2 text-charcoal/60">foaimportation.com</p>
           </div>
         </div>
@@ -230,7 +230,7 @@ const Home = () => {
               <li className="flex items-center gap-3">
                 <FaWhatsapp className="text-[#25D366]" size={20} />
                 <a href={whatsappSecondary} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  +234 810 352 6784 (General enquiries)
+                  +234 701 776 5446 (General enquiries)
                 </a>
               </li>
               <li className="flex items-center gap-3">

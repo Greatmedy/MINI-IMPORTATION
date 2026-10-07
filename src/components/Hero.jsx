@@ -9,7 +9,7 @@ import { buildWhatsAppUrl } from "../lib/whatsapp.js";
 const Hero = () => {
   const whatsapp = buildWhatsAppUrl(
     "Hello FOA Mini Importation, I'd like to know more about buying, learning, or importing.",
-    "2348103526784"
+    "2347017765446"
   );
 
   return (

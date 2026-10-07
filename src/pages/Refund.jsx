@@ -42,7 +42,7 @@ const Refund = () => (
 
       <h2 className="font-display text-lg font-semibold text-charcoal">How to Request a Refund</h2>
       <p>
-        Message us on WhatsApp at +234 810 352 6784 or email{" "}
+        Message us on WhatsApp at +234 701 776 5446 or email{" "}
         <a href="mailto:foaimportation.ltd@gmail.com" className="font-semibold text-brand-700 hover:underline">
           foaimportation.ltd@gmail.com
         </a>{" "}

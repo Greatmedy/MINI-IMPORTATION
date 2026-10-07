@@ -7,7 +7,7 @@ import foalogo from "../assets/foalogo.jpg";
 const Footer = () => {
   const year = new Date().getFullYear();
   const whatsappPrimary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "918983294206");
-  const whatsappSecondary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "2348103526784");
+  const whatsappSecondary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "2347017765446");
 
   return (
     <footer className="bg-charcoal text-white/80">
@@ -76,7 +76,7 @@ const Footer = () => {
             <li className="flex items-center gap-2">
               <FaWhatsapp className="shrink-0 text-brand-400" />
               <a href={whatsappSecondary} target="_blank" rel="noopener noreferrer" className="hover:text-brand-400">
-                +234 810 352 6784 (General)
+                +234 701 776 5446 (General)
               </a>
             </li>
           </ul>

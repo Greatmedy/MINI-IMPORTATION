@@ -5,7 +5,7 @@ import { buildWhatsAppUrl } from "../lib/whatsapp.js";
 
 const Contact = () => {
   const whatsappPrimary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "918983294206");
-  const whatsappSecondary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "2348103526784");
+  const whatsappSecondary = buildWhatsAppUrl("Hello FOA Mini Importation, I'd like to know more.", "2347017765446");
 
   return (
     <div className="container-app py-12 pt-28">
@@ -25,7 +25,7 @@ const Contact = () => {
           <li className="flex items-center gap-3">
             <FaWhatsapp className="text-[#25D366]" size={22} />
             <a href={whatsappSecondary} target="_blank" rel="noopener noreferrer" className="hover:underline">
-              +234 810 352 6784 (General enquiries)
+              +234 701 776 5446 (General enquiries)
             </a>
           </li>
           <li className="flex items-center gap-3">
