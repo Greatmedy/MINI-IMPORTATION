@@ -22,7 +22,7 @@ const MembershipTeaser = () => (
       >
         <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-brand-600">Membership</p>
         <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-          Run an import business without a physical shop
+          Ongoing support for people building an importation business
         </h2>
         <ul className="mt-5 space-y-3">
           {benefits.map((b) => (
@@ -48,8 +48,8 @@ const MembershipTeaser = () => (
         className="order-1 overflow-hidden rounded-3xl shadow-soft lg:order-2"
       >
         <img
-          src="https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1400"
-          alt="Nigerian entrepreneur packing orders from a phone-based storefront"
+          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1400"
+          alt="Nigerian entrepreneur planning an importation business"
           className="h-full w-full object-cover"
         />
       </motion.div>

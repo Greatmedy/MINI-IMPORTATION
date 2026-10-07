@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiStar } from "react-icons/fi";
+import { FiShoppingBag, FiBookOpen, FiPackage, FiUsers } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMail, FiMapPin } from "react-icons/fi";
 import Hero from "../components/Hero.jsx";
@@ -49,6 +49,37 @@ const testimonials = [
   },
 ];
 
+const paths = [
+  {
+    icon: FiShoppingBag,
+    title: "I Want To Buy",
+    text: "Browse products sourced by FOA and order for delivery.",
+    to: "/shop",
+    label: "Shop With FOA",
+  },
+  {
+    icon: FiBookOpen,
+    title: "I Want To Learn",
+    text: "Learn how to import from China and start an importation business with little capital.",
+    to: "/academy",
+    label: "Start Learning",
+  },
+  {
+    icon: FiPackage,
+    title: "I Want To Import",
+    text: "Let FOA help you source, ship and manage your goods from China.",
+    to: "/services",
+    label: "Import With FOA",
+  },
+  {
+    icon: FiUsers,
+    title: "I Want To Become A Member",
+    text: "Join the FOA community and access member-focused support and opportunities.",
+    to: "/membership",
+    label: "Become A Member",
+  },
+];
+
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -75,6 +106,60 @@ const Home = () => {
     <div>
       <Hero />
       <Services />
+
+      <section className="bg-blush py-20">
+        <div className="container-app">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="font-display text-3xl font-semibold sm:text-4xl">What Are You Looking For?</h2>
+            <p className="mt-3 text-charcoal/60">
+              Buy ready products, learn the business, import with support, or join the membership.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {paths.map((path) => (
+              <div key={path.title} className="card flex flex-col p-6">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-600">
+                  <path.icon size={22} />
+                </div>
+                <h3 className="font-display text-xl font-semibold">{path.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-charcoal/65">{path.text}</p>
+                <Link to={path.to} className="btn-secondary mt-5 w-fit">
+                  {path.label}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="container-app py-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+            A Business You Can Find. A Team You Can Reach.
+          </h2>
+          <p className="mt-4 text-charcoal/70">
+            FOA Mini Importation Limited is building a trusted importation community connecting Nigerian
+            entrepreneurs with products, suppliers, logistics support and practical importation education.
+          </p>
+          <p className="mt-4 text-charcoal/70">
+            You don’t need a physical shop to start. With your phone, internet connection and the right
+            knowledge, you can begin building your importation business from wherever you are.
+          </p>
+        </div>
+        <div className="mx-auto mt-10 grid max-w-3xl gap-4 text-sm sm:grid-cols-2">
+          <div className="card p-5">
+            <p className="font-semibold">FOA Mini Importation Limited</p>
+            <p className="mt-1 text-charcoal/60">Lagos, Nigeria</p>
+            <p className="mt-1 text-charcoal/60">No 9, Agwado Ijaye Road, opposite Tanimowo Family Plaza, Ijaye, Lagos State</p>
+          </div>
+          <div className="card p-5">
+            <p><a className="hover:text-brand-600" href="mailto:foaimportation.ltd@gmail.com">foaimportation.ltd@gmail.com</a></p>
+            <p className="mt-2"><a className="hover:text-brand-600" href={whatsappSecondary} target="_blank" rel="noopener noreferrer">WhatsApp +234 810 352 6784</a></p>
+            <p className="mt-2 text-charcoal/60">foaimportation.com</p>
+          </div>
+        </div>
+      </section>
+
       <AcademyTeaser />
       <MembershipTeaser />
 

@@ -20,9 +20,8 @@ const Footer = () => {
             <span className="font-display text-lg font-semibold text-white">FOA Mini Importation</span>
           </div>
           <p className="text-sm leading-relaxed">
-            Import smarter. Sell faster. Build in Nigeria. We source and deliver factory-priced
-            goods from China to Lagos, teach mini importation through FOA Academy, and help
-            members run an import business without owning a physical shop.
+            Import from China, learn the business, and grow with FOA. We source products, guide shipping
+            and clearing, and teach practical importation through FOA Academy.
           </p>
           <a
             href="https://www.facebook.com/share/1diicwezn8/?mibextid=wwxifr"

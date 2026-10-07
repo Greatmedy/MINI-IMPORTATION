@@ -1,44 +1,53 @@
 import { motion } from "framer-motion";
-import { FiTruck, FiBookOpen, FiShield, FiPackage } from "react-icons/fi";
+import { FiTruck, FiBookOpen, FiUsers, FiMapPin, FiSearch } from "react-icons/fi";
 
-const services = [
+const reasons = [
+  {
+    icon: FiSearch,
+    title: "China Sourcing",
+    description: "We help you source products from reliable suppliers in China.",
+  },
   {
     icon: FiTruck,
-    title: "Importation from China",
-    description:
-      "Sourcing, consolidation, air freight, and reliable delivery from Chinese factories straight into Lagos so your goods land fast and intact.",
+    title: "Import & Logistics Support",
+    description: "Get guidance through shipping, tracking, clearing and delivery.",
   },
   {
     icon: FiBookOpen,
     title: "FOA Academy",
-    description:
-      "Learn to source, price, and sell like a professional mini importer, from picking winning products to closing sales on Instagram and WhatsApp.",
+    description: "Learn how to start and grow your importation business with practical training.",
   },
   {
-    icon: FiShield,
-    title: "Importation Assistance & Guidance",
-    description:
-      "Supplier verification, shipping method selection, and customs clearance support so you avoid the costly mistakes new importers make.",
+    icon: FiUsers,
+    title: "FOA Membership",
+    description: "Get access to additional support, opportunities and business resources.",
   },
   {
-    icon: FiPackage,
-    title: "Order Handling for Members",
-    description:
-      "Our team takes your order, sorts it, tracks it, and clears it through customs, members focus on selling, we handle the logistics.",
+    icon: FiMapPin,
+    title: "Nigeria Delivery",
+    description: "Products can be delivered to customers across Nigeria through our logistics network.",
   },
 ];
 
 const Services = () => (
   <section className="container-app py-20">
     <div className="mx-auto max-w-2xl text-center">
-      <h2 className="font-display text-3xl font-semibold sm:text-4xl">What We Do</h2>
+      <h2 className="font-display text-3xl font-semibold sm:text-4xl">Why Choose FOA?</h2>
       <p className="mt-3 text-charcoal/60">
-        Everything you need to start and grow an import business in Nigeria, sourcing, training, and support.
+        Products, importation support, and practical training — so you can buy, learn, or build a business.
       </p>
     </div>
 
-    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {services.map((s, i) => (
+    <div className="mt-10 overflow-hidden rounded-3xl shadow-soft">
+      <img
+        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1800"
+        alt="Chinese factory team inspecting products before export"
+        className="h-72 w-full object-cover sm:h-96"
+      />
+    </div>
+
+    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {reasons.map((s, i) => (
         <motion.div
           key={s.title}
           initial={{ opacity: 0, y: 24 }}
