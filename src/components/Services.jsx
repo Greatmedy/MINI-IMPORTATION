@@ -1,40 +1,61 @@
 import { motion } from "framer-motion";
-import { FiTruck, FiBookOpen, FiUsers, FiMapPin, FiSearch } from "react-icons/fi";
+import {
+  FiTruck,
+  FiBookOpen,
+  FiUsers,
+  FiMapPin,
+  FiSearch,
+} from "react-icons/fi";
 
 const reasons = [
   {
     icon: FiSearch,
     title: "China Sourcing",
-    description: "We help you source products from reliable suppliers in China.",
+    description:
+      "We help you source products from reliable suppliers in China.",
   },
   {
     icon: FiTruck,
     title: "Import & Logistics Support",
-    description: "Get guidance through shipping, tracking, clearing and delivery.",
+    description:
+      "Get guidance through shipping, tracking, clearing and delivery.",
   },
   {
     icon: FiBookOpen,
     title: "FOA Academy",
-    description: "Learn how to start and grow your importation business with practical training.",
+    description:
+      "Learn how to start and grow your importation business with practical training.",
   },
   {
     icon: FiUsers,
     title: "FOA Membership",
-    description: "Get access to additional support, opportunities and business resources.",
+    description:
+      "Get access to additional support, opportunities and business resources.",
   },
   {
     icon: FiMapPin,
     title: "Nigeria Delivery",
-    description: "Products can be delivered to customers across Nigeria through our logistics network.",
+    description:
+      "Products can be delivered to customers across Nigeria through our logistics network.",
   },
 ];
 
 const Services = () => (
   <section className="container-app py-20">
     <div className="mx-auto max-w-2xl text-center">
-      <h2 className="font-display text-3xl font-semibold sm:text-4xl">Why Choose FOA?</h2>
+      <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+        Why Choose FOA?
+      </h2>
+      <div className="mt-10 overflow-hidden rounded-3xl shadow-soft">
+        <img
+          src="/china-factory.jpg"
+          alt="Chinese factory team inspecting products before export"
+          className="h-72 w-full object-cover sm:h-96"
+        />
+      </div>
       <p className="mt-3 text-charcoal/60">
-        Products, importation support, and practical training — so you can buy, learn, or build a business.
+        Products, importation support, and practical training — so you can buy,
+        learn, or build a business.
       </p>
     </div>
 
@@ -60,7 +81,9 @@ const Services = () => (
             <s.icon size={24} />
           </div>
           <h3 className="mb-2 font-display text-lg font-semibold">{s.title}</h3>
-          <p className="text-sm leading-relaxed text-charcoal/60">{s.description}</p>
+          <p className="text-sm leading-relaxed text-charcoal/60">
+            {s.description}
+          </p>
         </motion.div>
       ))}
     </div>
